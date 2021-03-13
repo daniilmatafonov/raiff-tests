@@ -4,15 +4,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pages.BankDemoPage;
 
-import static com.codeborne.selenide.Selenide.open;
-
 public class BankDemoPageTest extends BaseTest{
 
-    final BankDemoPage bankDemoPage = new BankDemoPage();
+    private final BankDemoPage bankDemoPage = new BankDemoPage();
 
     @BeforeEach
-    void closePopUp() {
-        open("/");
+    public void closePopUp() {
         bankDemoPage.closeInvitationPopUp();
     }
 
