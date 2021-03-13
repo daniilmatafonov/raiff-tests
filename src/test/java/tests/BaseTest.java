@@ -15,7 +15,7 @@ import static helpers.AttachmentHelper.*;
 
 public class BaseTest {
 
-    private static final IConfig config = ConfigFactory.create(IConfig.class, System.getProperties());
+    public static final IConfig CONFIG = ConfigFactory.create(IConfig.class, System.getProperties());
     private static final String ALLURE_SELENIDE_LISTENER_NAME = "AllureSelenide";
     private static final String RAIFF_BANK_DEMO_PAGE_URL = "https://online.raiffeisen.ru/demo";
 
@@ -23,14 +23,14 @@ public class BaseTest {
     static void setup() {
         addListener(ALLURE_SELENIDE_LISTENER_NAME, new AllureSelenide().screenshots(true).savePageSource(true));
         Configuration.baseUrl = RAIFF_BANK_DEMO_PAGE_URL;
-        Configuration.browser = config.browser();
-        Configuration.browserVersion = config.browserVersion();
-        if (config.remoteUrl() != null) {
+        Configuration.browser = CONFIG.browser();
+        Configuration.browserVersion = CONFIG.browserVersion();
+        if (CONFIG.remoteUrl() != null) {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);
             Configuration.browserCapabilities = capabilities;
-            Configuration.remote = config.remoteUrl();
+            Configuration.remote = CONFIG.remoteUrl();
         }
         open("/");
     }
@@ -40,7 +40,7 @@ public class BaseTest {
         attachScreenshot("Last screenshot");
         attachPageSource();
         attachAsText("Browser logs", getLogs());
-        if (config.videoStorage() != null)
+        if (CONFIG.videoStorage() != null)
             attachVideo();
         closeWebDriver();
     }

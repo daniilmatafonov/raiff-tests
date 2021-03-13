@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
+import static tests.BaseTest.CONFIG;
 
 public class AttachmentHelper {
 
@@ -36,7 +37,7 @@ public class AttachmentHelper {
     }
 
     public static String getVideoUrl() {
-        return System.getProperty("videoStorage") + getSessionId() + ".mp4";
+        return CONFIG.videoStorage() + getSessionId() + ".mp4";
     }
 
     public static String getSessionId(){
