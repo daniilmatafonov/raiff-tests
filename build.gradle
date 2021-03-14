@@ -13,7 +13,8 @@ def allureVersion = "2.13.8",
     selenideVersion = "5.18.0",
     junitVersion = "5.7.0",
     javafakerVersion = "1.0.2",
-    ownerVersion = "1.0.12"
+    ownerVersion = "1.0.12",
+    javaFakerVersion = "1.0.2"
 
 allure {
     version = "${allureVersion}"
@@ -25,6 +26,7 @@ allure {
 }
 dependencies {
     testImplementation (
+            "com.github.javafaker:javafaker:$javaFakerVersion",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "com.github.javafaker:javafaker:$javafakerVersion",
