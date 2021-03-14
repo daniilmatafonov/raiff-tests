@@ -6,7 +6,7 @@ import pages.GoalsPage;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
-public class GoalsPageTest extends BaseTest{
+public class GoalsTest extends BaseTest{
 
     private final GoalsPage goalsPage = new GoalsPage();
 
