@@ -18,8 +18,10 @@
 ## Отчёт в Allure
 ![Allure](src/test/resources/img/allure.jpg)
 
+https://jenkins.autotests.cloud/job/C04-G18-dmatafonov-raiff/allure/
+
 ## Уведомления в Slack
 ![Slack](src/test/resources/img/Slack_notification.jpg)
 
 
-![Selenide](src/test/resources/img/Selenide.png)![Gradle](src/test/resources/img/gradle.png)![Java](src/test/resources/img/java.png)![JUnit5](src/test/resources/img/jUnit5.png)![Allure_Report](src/test/resources/img/allure_Report.png)![Jenkins](src/test/resources/img/jenkins.png)![Slack](src/test/resources/img/slack.png)
+![Selenide](src/test/resources/img/selenide.png)![Gradle](src/test/resources/img/gradle.png)![Java](src/test/resources/img/java.png)![JUnit5](src/test/resources/img/jUnit5.png)![Allure_Report](src/test/resources/img/allure-logo.png)![Jenkins](src/test/resources/img/jenkins.png)![Slack](src/test/resources/img/slack-logo.png)
