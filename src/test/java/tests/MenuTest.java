@@ -17,9 +17,17 @@ public class MenuTest extends BaseTest{
 
     @Test
     public void showMenuSections() {
-        menuPage.openFavourites();
+        menuPage.showFavourites();
         sleep(2000);
-        menuPage.openTransfers();
+        menuPage.showTransfers();
+        sleep(2000);
+        menuPage.showPayments();
+        sleep(2000);
+        menuPage.showRecharges();
+        sleep(2000);
+        menuPage.showExchanges();
+        sleep(2000);
+        menuPage.showOpens();
         sleep(2000);
     }
 }

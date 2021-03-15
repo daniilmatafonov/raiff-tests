@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 public class GoalsTest extends BaseTest{
 
     private final GoalsPage goalsPage = new GoalsPage();
-    final Faker faker = new Faker();
+    private final Faker faker = new Faker();
 
     @BeforeEach
     public void closePopUp() {
@@ -18,7 +18,7 @@ public class GoalsTest extends BaseTest{
     }
 
     @Test
-    public void createGoal() {
+    public void createGoalSuccess() {
         String code = faker.number().digits(4);
         String amount = faker.number().digits(5);
         String musicInstrument = faker.music().instrument();

@@ -1,7 +1,7 @@
 
 # Автотесты для демо-страницы Raiffeisen
 - Создание финансовой цели
-- Досрочное закрытие ипотечного кредита
+- Досрочное закрытие потребительского кредита
 - Просмотр основных банковских операций
 
 Сборка тестов на локальном окружении:
@@ -10,7 +10,7 @@
 
 Сборка и запуск тестов в Selenoid:
 
-`clean test -Denv=remote -Dbrowser=chrome -Dbrowser_version=87.0 -Dvideo_storage="https://selenoid.autotests.cloud/video/" -Dremote_url="https://login:password@selenoid.autotests.cloud:4444/wd/hub" -Dthreads=1`
+`clean test -Denv=remote -Dbrowser=chrome -Dbrowser_version=87.0 -Dvideo_storage="https://selenoid.autotests.cloud/video/" -Dremote_url="https://user1:1234@selenoid.autotests.cloud:4444/wd/hub" -Dthreads=1`
 
 ## Видео о прохождении тестов
 ![Video](src/test/resources/video/video.gif)
