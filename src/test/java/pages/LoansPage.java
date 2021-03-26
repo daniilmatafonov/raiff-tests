@@ -2,14 +2,13 @@ package pages;
 
 import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 public class LoansPage extends BasePage {
 
     @Step("Открыть раздел кредитов")
     public void openLoansSection() {
-        $("nav.left-sidebar__nav > a[data-qa-node='left-sidebar__loans']").shouldBe(visible).click();
+        $("nav.left-sidebar__nav > a[data-qa-node='left-sidebar__loans']").click();
     }
 
     @Step("Погасить потребительский кредит досрочно")
